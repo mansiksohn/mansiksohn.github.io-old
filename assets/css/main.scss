@@ -6,7 +6,7 @@
 $sans-serif: 'Spoqa Han Sans';
 $monospace: 'Spoqa Han Sans';
 $type-size-4-5: 1.12em !default; // Ubuntu Mono is a bit small
-$link-color: red;
+$link-color: #f05241;
 
 @charset "utf-8";
 // @import "minimal-mistakes/skins/aqua"; // skin
@@ -39,5 +39,4 @@ html {
 .language-plaintext {
   font-family: $monospace;
   font-size: $type-size-5;
-  background: #c0ffee;
 }
