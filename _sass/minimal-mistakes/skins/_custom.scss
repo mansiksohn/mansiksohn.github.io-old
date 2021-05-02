@@ -7,7 +7,7 @@ $background-color: #ffffff !default;
 $text-color: #2d3036 !default;
 $muted-text-color: #616161 !default;
 $primary-color: #343434 !default;
-$border-color: #e9dcbe !default;
+$border-color: #dddddd !default;
 $footer-background-color: #ffffff !default;
 $link-color: #f05241 !default;
 $masthead-link-color: $text-color !default;
@@ -39,7 +39,7 @@ $base0f: #b18a3d !default;
   .notice--warning,
   .notice--success,
   .notice--danger {
-    color: $text-color; 
+    color: $text-color;
   }
 }
 
