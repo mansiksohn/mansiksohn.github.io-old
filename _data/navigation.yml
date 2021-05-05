@@ -1,15 +1,15 @@
 # main links
 main:
+  - title: "레시피"
+    url: /tags/
   - title: "재료"
     url: /categories/
   - title: "도구"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
+    url: /splash-page/
   - title: "About"
     url: /about/
   - title: "Blog"
-    url: /posts/
+    url: /blog/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
