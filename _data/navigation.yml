@@ -1,11 +1,11 @@
 # main links
 main:
   - title: "레시피"
-    url: /tags/
+    url: /recipe/
   - title: "재료"
-    url: /categories/
+    url: /parts/
   - title: "도구"
-    url: /splash-page/
+    url: /tools/
   - title: "About"
     url: /about/
   - title: "Blog"

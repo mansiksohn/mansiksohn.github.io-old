@@ -1,6 +1,6 @@
 ---
-title: "Posts by Category"
+title: "재료"
 layout: categories
-permalink: /categories/
+permalink: /parts/
 author_profile: false
 ---
