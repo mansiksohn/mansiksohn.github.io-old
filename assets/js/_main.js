@@ -43,6 +43,12 @@ $(document).ready(function() {
     }
   });
 
+  // 내비게이션바 포커스
+  $(".masthead__menu-item").on("click", function() {
+    $("#navTarget").addClass('active-link');
+    $('.active-link').removeClass('active-link');
+  }
+
   // Search toggle
   $(".search__toggle").on("click", function() {
     $(".search-content").toggleClass("is--visible");

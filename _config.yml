@@ -8,7 +8,7 @@ title_separator          : "&#124;"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Mansik Sohn"
 description              : "An amazing website."
-url                      : # "https://mansiksohn.github.io"
+url                      : "http://127.0.0.1:4000/" # "https://mansiksohn.github.io"
 baseurl                  : ""
 repository               : "mansiksohn/mansiksohn.github.io"
 teaser                   : "/assets/images/no-accident.png" # path of fallback teaser image
