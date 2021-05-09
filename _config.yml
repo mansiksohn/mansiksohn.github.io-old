@@ -17,6 +17,12 @@ masthead_title           : # overrides the website title displayed in the masthe
 # breadcrumbs              : false # true, false (default)
 words_per_minute         : 200
 
+# Collection 커스텀 https://jekyllrb.com/docs/collections/
+collections:
+  tools:
+    output: true
+    permalink: /tools/:slug
+
 # Search
 search                   : true # true, false (default)
 search_full_content      : false # true, false (default)

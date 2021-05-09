@@ -12,6 +12,26 @@ $type-size-4-5: 1em !default;
 @import "minimal-mistakes";
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
+// Section styles -- Grid style import
+// Grid item
+$grid-item-title-small: 18px;
+$grid-item-title-medium: 20px;
+$grid-item-title-large: 20px;
+$grid-item-title-weight: 500;
+$grid-item-title-spacing: -0.02em;
+
+$grid-item-subtitle-small: 8px;
+$grid-item-subtitle-medium: 12px;
+$grid-item-subtitle-large: 15px;
+$grid-item-subtitle-weight: 400;
+$grid-item-subtitle-spacing: 0em;
+
+$overlay_text_color: #2A2F36;
+$overlay-background-color: #fff;
+$overlay-opacity: 0.8;
+$grid-spacing: 12px;
+@import "tools";
+
 // https://github.com/mmistakes/minimal-mistakes/issues/1219
 html {
   font-size: 12px; // change to whatever

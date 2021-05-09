@@ -107,6 +107,44 @@ abbr[data-original-title] {
 /* blockquotes */
 
 blockquote {
+	font-weight: 100;
+	font-size: 2rem;
+	max-width: 600px;
+  text-align: center;
+	line-height: 1.4;
+	position: relative;
+	padding: .5rem;
+}
+
+blockquote:before,
+blockquote:after {
+	position: absolute;
+	color: #11A85A;
+	font-size: 8rem;
+	width: 4rem;
+	height: 4rem;
+}
+
+blockquote:before {
+	content: '“';
+	left: -3rem;
+	top: -2rem;
+}
+
+blockquote:after {
+	content: '”';
+	right: -3rem;
+	bottom: 4rem;
+}
+
+cite {
+  font-size: 1rem;
+	line-height: 3;
+	text-align: left;
+}
+
+/*
+blockquote {
   margin: 2em 1em 2em 0;
   padding-left: 1em;
   padding-right: 1em;
@@ -122,6 +160,8 @@ blockquote {
     }
   }
 }
+*/
+
 
 /* links */
 
