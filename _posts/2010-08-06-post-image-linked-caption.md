@@ -1,7 +1,6 @@
 ---
 title: "Post: Image (Linked with Caption)"
-categories:
-  - Post Formats
+categories: projects
 tags:
   - image
   - Post Formats

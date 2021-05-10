@@ -32,6 +32,13 @@ $overlay-opacity: 0.8;
 $grid-spacing: 12px;
 @import "tools";
 
+$color-white: #fff;
+$color-black: #000;
+$breakpoint-medium: 760;
+$breakpoint-small: 500;
+$breakpoint-xsmall: 380;
+@import "layout";
+
 // https://github.com/mmistakes/minimal-mistakes/issues/1219
 html {
   font-size: 12px; // change to whatever

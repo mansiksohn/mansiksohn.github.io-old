@@ -4,6 +4,13 @@ subtitle: 'uxcell 16pcs 3D Printer Heated Bed Yellow Spring Kit Light Load Compr
 description:
 featured_image: '/img/tools/Die Spring.jpg'
 category: projects
+
+project:
+  title: "Die Spring"
+  type: "Jekyll"
+  url: "https://github.com/arnolds/pineapple"
+  logo: "/img/tools/Die Spring.jpg"
+  tech: "HTML, CSS, Boostrap, Sass, JavaScript, jQuery, Jekyll"
 ---
 
 ## 머리말은 책의 머리입니다  
