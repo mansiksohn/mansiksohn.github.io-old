@@ -2,24 +2,24 @@
 layout: default
 ---
 
-<section class="tools">
+<section class="material">
 
-	<div class="content-wrap tools-wrap">
+	<div class="content-wrap material-wrap">
 
 		{% for material in site.tools reversed %}
 
-		<div class="tools-item">
+		<div class="material-item">
 
-			<a class="tools-item__link" href="{{ material.url }}">
+			<a class="material-item__link" href="{{ material.url }}">
 
-				<div class="tools-item__image">
+				<div class="material-item__image">
 					<img src="{{ material.featured_image  }}" alt="{{ material.title }}">
 				</div>
 
-				<div class="tools-item__content">
-					<div class="tools-item__info">
-						<h2 class="tools-item__title">{{ material.title }}</h2>
-						<p class="tools-item__subtitle">{{ material.subtitle }}</p>
+				<div class="material-item__content">
+					<div class="material-item__info">
+						<h2 class="material-item__title">{{ material.title }}</h2>
+						<p class="material-item__subtitle">{{ material.subtitle }}</p>
 					</div>
 				</div>
 

@@ -1,18 +1,18 @@
 // - - - - - - - - - - - - - - - - - -
 
-// tools
+// material
 
 // - - - - - - - - - - - - - - - - - -
 
-.tools {
+.material {
 	padding: 0 $grid-spacing;
 }
 
-.tools-wrap {
+.material-wrap {
 
 }
 
-.tools-item {
+.material-item {
 	position: relative;
 	padding: $grid-spacing;
 	float: left;
@@ -24,7 +24,7 @@
     }
 }
 
-.tools-item__link {
+.material-item__link {
 	position: relative;
 	display: block;
   transition: top ease 0.5s;
@@ -32,7 +32,7 @@
 	@include mq(tabletl) {
 
 		&:hover {
-			.tools-item__content {
+			.material-item__content {
 				opacity: 1;
 				visibility: visible;
 			}
@@ -40,12 +40,12 @@
 	}
 }
 
-.tools-item__image {
+.material-item__image {
 	width: 100%;
 
 }
 
-.tools-item__content {
+.material-item__content {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -54,24 +54,24 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: rgba($overlay-background-color, $overlay-opacity);
+	background: rgba($overlay_background_color, $overlay_opacity);
 
 	opacity: 0;
 	visibility: hidden;
 	//transition(all 0.2s ease-in-out);
 }
 
-.tools-item__image.hover {
+.material-item__image.hover {
   visibility: visible 0.2s ease-in-out;
 }
 
-.tools-item__info {
+.material-item__info {
     margin-top: 8px;
     text-align: center;
 
 }
 
-.tools-item__title {
+.material-item__title {
     color: $overlay-text-color;
 	font-size: $grid-item-title-small;
 	font-weight:  $grid-item-title-weight;
@@ -86,7 +86,7 @@
 	}
 }
 
-.tools-item__subtitle {
+.material-item__subtitle {
 	margin-top: 2px;
 	color: $overlay-text-color;
 	font-size: $grid-item-subtitle-small;
