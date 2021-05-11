@@ -40,6 +40,7 @@
 	}
 }
 
+
 .material-item__image {
 	width: 100%;
 
@@ -56,9 +57,23 @@
 	justify-content: center;
 	background: rgba($overlay_background_color, $overlay_opacity);
 
-	opacity: 0;
-	visibility: hidden;
+//	opacity: 0.3;
+//	visibility: visible;
 	//transition(all 0.2s ease-in-out);
+	a {
+		display: block;
+
+		&:hover {
+			.img-wrapper {
+				&:before {
+					opacity: 1;
+				}
+				&:after {
+					opacity: .45;
+				}
+			}
+		}
+	}
 }
 
 .material-item__image.hover {

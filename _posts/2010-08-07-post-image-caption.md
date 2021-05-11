@@ -4,6 +4,7 @@ categories: projects
 tags:
   - image
   - Post Formats
+featured_image: '/img/tools/Die Spring.jpg'
 ---
 
 {% capture fig_img %}

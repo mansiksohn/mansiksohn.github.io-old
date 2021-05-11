@@ -1,6 +1,7 @@
 ---
 title: "Post: Gallery"
 categories: projects
+featured_image: '/img/tools/Die Spring.jpg'
 tags:
   - gallery
   - Post Formats

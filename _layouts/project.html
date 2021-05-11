@@ -5,18 +5,24 @@ layout: default
 <main class="content">
 	<section class="projects">
 		<div class="container">
-			<h2>Tools</h2>
 			<ul class="projects-list">
-				{% for item in site.categories.projects reversed %}
-					<li>
-						<a href="{{ item.url | prepend: site.baseurl }}">
+				{% for material in site.tools reversed %}
+					<ul>
+						<a class="material-item__link" href="{{ material.url | prepend: site.baseurl }}">
+
 							<div class="img-wrapper">
-								<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+								<img src="{{ material.featured_image | prepend: site.baseurl }}" alt="{{ material.title }}" />
 							</div>
-							<span class="h2">{{ item.project.type }}</span>
-							<h3>{{ item.project.title }}</h3>
+
+							<div class="material-item__content">
+								<div class="material-item__info">
+									<h2 class="material-item__title">{{ material.title }}</h2>
+									<p class="material-item__subtitle">{{ material.subtitle }}</p>
+								</div>
+							</div>
+
 						</a>
-					</li>
+					</ul>
 				{% endfor %}
 			</ul>
 		</div>
