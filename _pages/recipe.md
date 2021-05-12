@@ -1,6 +1,6 @@
 ---
 title: "Recipe"
-layout: project
+layout: recipe
 permalink: /recipe/
 author_profile: false
 ---

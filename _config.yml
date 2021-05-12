@@ -22,6 +22,9 @@ collections:
   tools:
     output: true
     permalink: /tools/:slug
+  recipe:
+    output: true
+    permalink: /recipe/:slug
 
 # Search
 search                   : true # true, false (default)

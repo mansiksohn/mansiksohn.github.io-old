@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<main class="content">
+
+	<section class="material"> <!--"projects">-->
+
+		<div class="container">
+			<ul class="material-list">
+				{% for post in site.recipe reversed %}
+					<ul>
+						<a class="material-item__link" href="{{ post.url | prepend: site.baseurl }}">
+
+							<div class="img-wrapper">
+								<img src="{{ post.featured_image | prepend: site.baseurl }}" alt="{{ post.title }}" />
+								<h2 class="material-item__title">{{ post.title }}</h2>
+								<p class="material-item__subtitle">{{ post.subtitle }}</p>
+							</div>
+
+						</a>
+					</ul>
+				{% endfor %}
+			</ul>
+		</div>
+	</section>
+</main>

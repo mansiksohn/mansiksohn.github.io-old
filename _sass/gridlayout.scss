@@ -6,27 +6,6 @@
 	@include clearfix;
 }
 
-.header {
-	background: $color-white;
-	padding: 3rem 0;
-}
-
-.logo {
-	float: left;
-	font-size: 1.8rem;
-	font-weight: 600;
-	margin: 0;
-	line-height: 1;
-}
-
-.nav {
-	float: right;
-
-	a {
-		@extend .logo;
-	}
-}
-
 .content {
 	background: $color-white;
 	padding: 7rem 0 0;
@@ -43,7 +22,7 @@
 }
 
 .intro,
-.projects {
+.material {
 	padding: 0 0 5rem;
 }
 
@@ -56,7 +35,7 @@
 	}
 }
 
-.projects-list {
+.material-list {
 	@media (min-width: $breakpoint-small) {
 		margin-left: -1.5rem;
 		margin-right: -1.5rem;
@@ -106,7 +85,7 @@
 
 		&:before {
 			content: "View Project";
-			color: $color-white;
+			color: $color-black;
 			@extend .h2;
 			font-weight: 800;
 			position: absolute;
@@ -123,7 +102,7 @@
 		}
 
 		&:after {
-			background: #000;
+			background: #FFF;
 			content: "";
 			display: block;
 			position: absolute;
@@ -147,7 +126,7 @@
 	}
 }
 
-.project {
+.material {
 	left: 0;
 	position: relative;
 	top: 0;
