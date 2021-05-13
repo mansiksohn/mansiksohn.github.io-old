@@ -140,9 +140,9 @@ $grid-spacing: {{ site.data.settings.grid_settings.grid_spacing }}px;
 @import "tools";
 $color-white: #fff;
 $color-black: #000;
-$breakpoint-medium: 760;
-$breakpoint-small: 500;
-$breakpoint-xsmall: 380;
+$breakpoint-medium: 760px;
+$breakpoint-small: 500px;
+$breakpoint-xsmall: 380px;
 @import "gridlayout";
 
 // https://github.com/mmistakes/minimal-mistakes/issues/1219

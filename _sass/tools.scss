@@ -57,9 +57,9 @@
 	justify-content: center;
 	background: rgba($overlay_background_color, $overlay_opacity);
 
-//	opacity: 0.3;
-//	visibility: visible;
-	//transition(all 0.2s ease-in-out);
+	opacity: 0.3;
+	visibility: visible;
+	transition: (all 0.2s ease-in-out);
 	a {
 		display: block;
 

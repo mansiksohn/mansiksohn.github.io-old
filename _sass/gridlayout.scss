@@ -36,49 +36,31 @@
 }
 
 .material-list {
-	@media (min-width: $breakpoint-small) {
-		margin-left: -1.5rem;
-		margin-right: -1.5rem;
-		@include clearfix;
+	position: relative;
+	padding: $grid-spacing;
+	float: left;
+	width: 50%;
 
-		li {
-			float: left;
-			width: 50%;
+		@media all and (max-width: $breakpoint-medium) {
+			width: 100%;
+			padding: 8px;
 		}
+}
 
-		a {
-			padding: 0 1.5rem;
-		}
-	}
+a {
+	display: block;
 
-	@media (min-width: $breakpoint-medium) {
-		li {
-			width: 33.33333%;
-		}
-	}
-
-	li {
-		margin-bottom: 3rem;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
-
-	a {
-		display: block;
-
-		&:hover {
-			.img-wrapper {
-				&:before {
-					opacity: 1;
-				}
-				&:after {
-					opacity: .45;
-				}
+	&:hover {
+		.img-wrapper {
+			&:before {
+				opacity: 1;
+			}
+			&:after {
+				opacity: .45;
 			}
 		}
 	}
+}
 
 	.img-wrapper {
 		position: relative;
@@ -115,16 +97,15 @@
     		transition: all .5s ease-in-out;
     		z-index: 1;
 		}
-	}
 
-	img {
-		width: 100%;
+		img {
+			width: 100%;
+		}
 	}
 
 	span {
 		margin: 1rem 0 .5rem;
 	}
-}
 
 .material {
 	left: 0;
