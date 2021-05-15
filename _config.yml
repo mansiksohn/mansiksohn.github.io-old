@@ -22,9 +22,9 @@ collections:
   tools:
     output: true
     permalink: /tools/:slug
-  recipe:
+  blueprint:
     output: true
-    permalink: /recipe/:slug
+    permalink: /blueprint/:slug
 
 # Search
 search                   : true # true, false (default)

@@ -1,305 +1,83 @@
-.container {
+//--Hero Banner--//
+.hero__background {
 	display: block;
-	margin: 0 auto;
-	max-width: 70em;
-	padding: 0 3rem;
-	@include clearfix;
+	//position: absolute;
+	top: 0px;
+	left: 50%;
+	//transform: translateX(-50%);
+	//z-index: -1;
+
+	//display: none;
 }
 
+.intro_main {
+		@include clearfix;
+		margin-left: auto;
+		margin-right: auto;
+    padding: 3em 0;
+		@include breakpoint($x-large) {
+			max-width: $max-width;
+		}
+}
+
+//--Grid Style--//
 .content {
-	background: $color-white;
-	padding: 7rem 0 0;
-	margin-bottom: 31.24rem;
-	position: relative;
-	top: 0;
-	left: 0;
-	z-index: 1;
-
-	@media (min-width: $breakpoint-medium) {
-		padding: 21rem 0 0;
-		margin-bottom: 23.42rem;
+	@include clearfix;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: space-between;
+	@include breakpoint($x-large) {
+		max-width: $max-width;
 	}
 }
 
-.intro,
-.material {
-	padding: 0 0 5rem;
+.img-gallery {
+ width: 100%;
+ display: grid;
+ grid-template-columns: repeat(auto-fill,minmax(516px, 1fr));
+ justify-content: center;
+ padding: 4px;
 }
 
-.intro {
-	@media (min-width: $breakpoint-medium) {
-		p {
-			font-size: 2.7rem;
-			max-width: 66.66666%;
-		}
-	}
+.box {
+	 flex-basis: 50%;
+	 width: 100%;
+	 padding: $grid-spacing;
+	 margin: 2px;
 }
 
-.material-list {
+.material-item__link {
 	position: relative;
-	padding: $grid-spacing;
-	float: left;
-	width: 50%;
-
-		@media all and (max-width: $breakpoint-medium) {
-			width: 100%;
-			padding: 8px;
-		}
-}
-
-a {
 	display: block;
+    transition: top ease 0.5s;
 
 	&:hover {
-		.img-wrapper {
-			&:before {
-				opacity: 1;
-			}
-			&:after {
-				opacity: .45;
-			}
+		.material-item__content {
+			opacity: 1;
+			visibility: visible;
 		}
 	}
+
 }
 
-	.img-wrapper {
-		position: relative;
+.material-item__content {
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+background: rgba($overlay_background_color, $overlay_opacity);
 
-		&:before {
-			content: "View Project";
-			color: $color-black;
-			@extend .h2;
-			font-weight: 800;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			margin-top: -.5rem;
-			margin-left: -4.4rem;
-			opacity: 0;
-			-webkit-transition: all .5s ease-in-out;
-    		transition: all .5s ease-in-out;
-    		-webkit-transition-delay: .25s;
-    		transition-delay: .25s;
-    		z-index: 2;
-		}
+opacity: 0;
+visibility: hidden;
+transition: (all 0.2s ease-in-out);
 
-		&:after {
-			background: #FFF;
-			content: "";
-			display: block;
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			opacity: 0;
-			-webkit-transition: all .5s ease-in-out;
-    		transition: all .5s ease-in-out;
-    		z-index: 1;
-		}
-
-		img {
-			width: 100%;
-		}
-	}
-
-	span {
-		margin: 1rem 0 .5rem;
-	}
-
-.material {
-	left: 0;
-	position: relative;
-	top: 0;
-
-	@media (min-width: $breakpoint-medium) {
-		margin-top: -21rem;
-
-		.article-wrapper {
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-		}
-	}
-
-	.container {
-		max-width: 100%;
-	}
-
-	article {
-		margin-bottom: 3rem;
-
-		@media (min-width: $breakpoint-medium) {
-			float: right;
-			right: 0;
-			width: 40%;
-			position: absolute;
-			right: 5%;
-		}
-	}
-
-	aside {
-		margin-left: -3rem;
-		margin-right: -3rem;
-
-		@media (min-width: $breakpoint-small) {
-			@include clearfix;
-		}
-
-		@media (min-width: $breakpoint-medium) {
-			float: left;
-			width: 55%;
-		}
-	}
-
-	.project-meta {
-		margin: 3rem 0 0;
-
-		@media (min-width: $breakpoint-medium) {
-			margin: 5rem 0 0;
-			max-width: 70%;
-		}
-	}
-
-	.h2 {
-		margin: 3rem 0 .5rem;
-
-		&:first-of-type {
-			margin-top: 0;
-		}
-	}
-
-	h1 {
-		a {
-			text-decoration: underline;
-		}
-	}
-
-	li {
-		margin-bottom: 0rem;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
-
-	img {
-		width: 100%;
-	}
-}
-
-.project-navigation {
-	background: $color-black;
-	padding: 5rem 0;
-
-	a {
-		color: $color-white;
-		display: inline-block;
-
-		&:hover {
-			h2:after {
-				visibility: visible;
-				-webkit-transform: scaleX(1);
-				transform: scaleX(1);
-			}
-
-			&.prev {
-				span {
-					left: 7px;
-				}
-			}
-
-			span {
-				&:after {
-					left: 7px;
-				}
-
-				&:before {
-					left: -7px;
-				}
-			}
-		}
-
-		&:nth-of-type(1),
-		&:nth-of-type(2) {
-			display: table;
-			margin: 0 auto;
-			text-align: center;
-
-			@media (min-width: $breakpoint-xsmall) {
-				display: inline-block;
-				margin: 0;
-				text-align: left;
-			}
-		}
-
-		&:nth-of-type(1) {
-			@media (min-width: $breakpoint-xsmall) {
-				float: left;
-			}
-		}
-
-		&:nth-of-type(2) {
-			margin-top: 3rem;
-
-			@media (min-width: $breakpoint-xsmall) {
-				float: right;
-				margin-top: 0;
-			}
-		}
-
-		&.next {
-			span {
-				&:after {
-					content: "\02192";
-				}
-			}
-		}
-
-		&.prev {
-			span {
-				position: relative;
-				left: 0;
-				-webkit-transition: all .3s ease-in-out 0s;
-				transition: all .3s ease-in-out 0s;
-
-				&:before {
-					content: "\02190";
-				}
-			}
-		}
-	}
-
-	span {
-		&:after,
-		&:before {
-			position: relative;
-			left: 0;
-			-webkit-transition: all .3s ease-in-out 0s;
-			transition: all .3s ease-in-out 0s;
-		}
-	}
-
-	h2 {
-		display: inline-block;
-		font-size: 1.8rem;
-		position: relative;
-
-		&:after {
-			content: "";
-			position: absolute;
-			width: 100%;
-			height: 1px;
-			bottom: -4px;
-			left: 0;
-			background-color: $color-white;
-			visibility: hidden;
-			-webkit-transform: scaleX(0);
-			transform: scaleX(0);
-			-webkit-transition: all .3s ease-in-out 0s;
-			transition: all .3s ease-in-out 0s;
-		}
+	&:hover {
+	 opacity: 1;
+	 visibility: visible;
+	 transition: (all 0.2s ease-in-out);
 	}
 }

@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: "레시피"
-    url: /recipe/
+  - title: "Blueprint"
+    url: /blueprint/
   - title: "재료"
     url: /parts/
   - title: "도구"

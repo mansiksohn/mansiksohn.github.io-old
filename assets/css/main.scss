@@ -137,7 +137,7 @@ $footer-logo-width: {{ site.data.settings.footer_settings.logo_width }}px;
 $overlay-opacity: {{ site.data.settings.grid_settings.overlay_opacity }};
 $grid-spacing: {{ site.data.settings.grid_settings.grid_spacing }}px;
 // Grid item
-@import "tools";
+//@import "tools";
 $color-white: #fff;
 $color-black: #000;
 $breakpoint-medium: 760px;

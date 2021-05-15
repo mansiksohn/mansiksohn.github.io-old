@@ -2,9 +2,22 @@
 layout: default
 ---
 
+<section class="intro_main">
+  {% if page.hero_settings.background_image %}
+		<img src="{{ /images/bio-photo.png | relative_url }}" class="hero__background" draggable="false">
+	{% endif %}
+	<div class="wrap">
+		<div class="main-text">
+			가상, <br>
+      거대로봇, <br>
+      거래소.</div>
+		<p style="margin-top: 16px;">설계도 모음입니다.</p>
+	</div>
+</section>
+
 <section class="content">
 	<div class="img-gallery">
-		{% for material in site.tools reversed %}
+		{% for material in site.blueprint reversed %}
 		<div class="box">
 			<a class="material-item__link" href="{{ material.url }}">
 				<div class="material-item__image">
