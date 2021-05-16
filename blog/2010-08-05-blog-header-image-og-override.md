@@ -1,11 +1,11 @@
 ---
-title: "Post: Header Image with OpenGraph Override"
+title: "blog: Header Image with OpenGraph Override"
 header:
   image: /assets/images/page-header-image.png
   og_image: /assets/images/page-header-og-image.png
 categories:
   - Layout
-  - parts
+  - Uncategorized
 tags:
   - edge case
   - image

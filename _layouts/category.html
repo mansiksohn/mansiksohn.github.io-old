@@ -1,19 +1,11 @@
 ---
-layout: default
+layout: archive
 ---
 
-<ul class="posts-list">
+{{ content }}
 
-  {% assign category = page.category | default: page.title %}
-  {% for post in site.categories[category] %}
-    <li>
-      <h3>
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          {{ post.title }}
-        </a>
-        <small>{{ post.date | date_to_string }}</small>
-      </h3>
-    </li>
-  {% endfor %}
+{% assign entries_layout = page.entries_layout | default: 'list' %}
 
-</ul>
+<section class="content">
+  {% include posts-category-grid.html taxonomy=page.taxonomy type=entries_layout %}
+</section>

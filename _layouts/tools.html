@@ -1,19 +1,22 @@
 ---
-layout: default
+layout: archive
 ---
-
+Grid Gallery
+{% assign my_variable = site.categories[include.taxonomy] %}
+{{ my_variable }}
+<!--Grid Gallery-->
 <section class="content">
 	<div class="img-gallery">
-		{% for material in site.tools reversed %}
+		{% for post in site.categories[include.taxonomy] reversed %}
 		<div class="box">
-			<a class="material-item__link" href="{{ material.url }}">
-				<div class="material-item__image">
-					<img src="{{ material.featured_image }}" alt="{{ material.title }}">
+			<a class="post-item__link" href="{{ post.url }}">
+				<div class="post-item__image">
+					<img src="{{ post.featured_image }}" alt="{{ post.title }}">
 				</div>
-				<div class="material-item__content">
-					<div class="material-item__info">
-						<h2 class="material-item__title">{{ material.title }}</h2>
-						<p class="material-item__subtitle">{{ material.subtitle }}</p>
+				<div class="post-item__content">
+					<div class="post-item__info">
+						<h2 class="post-item__title">{{ post.title }}</h2>
+						<p class="post-item__subtitle">{{ post.subtitle }}</p>
 					</div>
 				</div>
 			</a>
@@ -21,3 +24,8 @@ layout: default
 		{% endfor %}
 	</div>
 </<section>
+
+<!--paginator-->
+<div>
+  {% include paginator.html %}
+</div>

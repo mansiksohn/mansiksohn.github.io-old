@@ -1,32 +1,10 @@
-//--Hero Banner--//
-.hero__background {
-	display: block;
-	//position: absolute;
-	top: 0px;
-	left: 50%;
-	//transform: translateX(-50%);
-	//z-index: -1;
-
-	//display: none;
-}
-
-.intro_main {
-		@include clearfix;
-		margin-left: auto;
-		margin-right: auto;
-    padding: 3em 0;
-		@include breakpoint($x-large) {
-			max-width: $max-width;
-		}
-}
-
 //--Grid Style--//
 .content {
 	@include clearfix;
 	margin-left: auto;
 	margin-right: auto;
-	justify-content: space-between;
-	@include breakpoint($x-large) {
+	justify-content: center;
+	@include breakpoint($medium-wide) {
 		max-width: $max-width;
 	}
 }
@@ -34,25 +12,25 @@
 .img-gallery {
  width: 100%;
  display: grid;
- grid-template-columns: repeat(auto-fill,minmax(516px, 1fr));
+ grid-template-columns: repeat(auto-fill,minmax(450px, 1fr));
  justify-content: center;
  padding: 4px;
 }
 
 .box {
-	 flex-basis: 50%;
+	 flex-basis: 25%;
 	 width: 100%;
 	 padding: $grid-spacing;
 	 margin: 2px;
 }
 
-.material-item__link {
+.post-item__link {
 	position: relative;
 	display: block;
     transition: top ease 0.5s;
 
 	&:hover {
-		.material-item__content {
+		.post-item__content {
 			opacity: 1;
 			visibility: visible;
 		}
@@ -60,7 +38,7 @@
 
 }
 
-.material-item__content {
+.post-item__content {
 position: absolute;
 top: 0;
 right: 0;

@@ -1,0 +1,17 @@
+	<div class="img-gallery">
+    {%- for post in site.categories[include.taxonomy] -%}
+      <div class="box">
+        <a class="post-item__link" href="{{ post.url }}">
+          <div class="post-item__image">
+            <img src="{{ post.featured_image }}" alt="{{ post.title }}">
+          </div>
+          <div class="post-item__content">
+            <div class="post-item__info">
+              <h2 class="post-item__title">{{ post.title }}</h2>
+              <p class="post-item__subtitle">{{ post.subtitle }}</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    {%- endfor -%}
+  </div>

@@ -1,6 +1,6 @@
 ---
 title: "Post: Image (Caption)"
-categories: projects
+categories: tools
 tags:
   - image
   - Post Formats

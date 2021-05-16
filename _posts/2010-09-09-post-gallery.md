@@ -1,6 +1,6 @@
 ---
 title: "Post: Gallery"
-categories: projects
+categories: parts
 featured_image: '/img/tools/Die Spring.jpg'
 tags:
   - gallery

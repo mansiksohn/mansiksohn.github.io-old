@@ -1,9 +1,10 @@
 ---
-title: "recipe금형 스프링3"
+title: "recipe 금형 스프링 test"
 subtitle: 'uxcell 16pcs 3D Printer Heated Bed Yellow Spring Kit Light Load Compression Leveling Springs 25mm/0.98 Inch'
-description:
+layout: single_morepost
 featured_image: '/img/tools/Die Spring.jpg'
 category: blueprint
+author_profile: false
 ---
 
 ## 머리말은 책의 머리입니다  

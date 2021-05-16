@@ -18,13 +18,18 @@ masthead_title           : # overrides the website title displayed in the masthe
 words_per_minute         : 200
 
 # Collection 커스텀 https://jekyllrb.com/docs/collections/
-collections:
-  tools:
-    output: true
-    permalink: /tools/:slug
-  blueprint:
-    output: true
-    permalink: /blueprint/:slug
+#collections:
+#  portfolio:
+#    output: true
+#    permalink: /portfolio/:slug
+#  recipes:
+#    output: true
+#    permalink: /recipes/:slug
+#  books:
+#    output: true
+#  cacopedia:
+#    output: true
+#    permalink: /cacopedia/:slug
 
 # Search
 search                   : true # true, false (default)
@@ -181,7 +186,7 @@ whitelist:
   - jekyll-feed
   - jekyll-include-cache
 
-
+category_list: [ blueprint, parts, tools ]
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
