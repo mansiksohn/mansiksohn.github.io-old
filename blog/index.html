@@ -1,0 +1,26 @@
+---
+layout: home
+title: Blog
+---
+
+<section class="portfolio">
+	<div class="content-wrap portfolio-wrap">
+		{% for container in site.container reversed %}
+		<div class="portfolio-item">
+			<a class="portfolio-item__link" href="{{ container.url }}">
+<!--
+				<div class="portfolio-item__image">
+					<img src="{{ container.featured_image  }}" alt="{{ container.title }}">
+        </div>
+-->
+				<div class="portfolio-item__content">
+					<div class="portfolio-item__info">
+						<h2 class="portfolio-item__title">{{ container.title }}</h2>
+						<p class="portfolio-item__subtitle">{{ container.subtitle }}</p>
+					</div>
+				</div>
+			</a>
+		</div>
+		{% endfor %}
+	</div>
+</section>

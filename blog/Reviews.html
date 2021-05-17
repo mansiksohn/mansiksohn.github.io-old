@@ -1,0 +1,116 @@
+---
+layout: default
+title: Blog
+description: 
+featured_image: '/img/opengraph.png'
+---
+
+<!--
+<section class="intro">
+
+	<div class="wrap">
+
+		<div class="main-text">
+            I WRITE ABOUT <br>
+            THE THINGS <br>
+            I'M INTERESTED IN</div>
+		<p>관심있는 것들에 대한 글을 씁니다.</p>
+</section>
+    
+-->
+    
+<section class="blog">
+     <div class="content-wrap blog-wrap">
+         <!--  카테고리 -->
+        <nav class="category">
+         <!-- all -->
+          <a href="{{ root_url }}/blog" class="category-name" cate="All">
+            
+            <span class="name">
+                All
+            </span>
+            
+            <span class="badge">
+                {{site.posts | size}}
+            </span>
+        </a>
+          
+        <span class="category_divider">|</span> 
+          
+          {% for category in site.categories %}
+          
+          <a href="{{ root_url }}/blog/{{ site.category_dir }}{{ category | first }}" 
+             class="category-name" cate="{{ category | first }}">
+        
+              <span class="name">
+              {{ category | first }} 
+              </span>
+              
+              <span class="badge">
+                  {{ category | last | size }}
+              </span>
+              
+        </a>
+          
+        <span class="category_divider">|</span> 
+          
+      {% endfor %}
+          
+      </nav>
+        </div> 
+</section>
+    
+<section class="blog">
+    
+	<div class="content-wrap blog-wrap">
+
+        {% for post in site.categories.Reviews %}
+
+		<article class="blog-post">
+				 <header>
+                    <div class="post-title">
+                      <a class="post-link" href="{{ post.url | relative_url }}">
+                        {{ post.title }}
+                      </a>
+                    </div>
+                    <div class="meta">
+                      {{ post.date | date: "%B %-d, %Y" }}
+                    </div>               
+                    <div class="excerpt">
+                      {{ post.excerpt | truncatewords: 40, '...' }}
+                    </div>
+                </header>
+
+
+				<div class="blog-post__content">
+					<div class="blog-post__info">
+						<h2 class="blog-post__title">{{ post.title }}</h2>
+						<p class="blog-post__subtitle">{{ post.date | date_to_long_string }}</p>
+					</div>
+				</div>
+		</article>
+
+		{% endfor %}
+
+	</div>
+
+</section>
+
+{% if paginator.total_pages > 1 %}
+
+<section class="pagination">
+
+	<div class="wrap">
+
+		{% if paginator.previous_page %}
+		<a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="button button--light pagination__prev"><i class="fa fa-angle-left" aria-hidden="true"></i> <span>Newer Posts</span></a>
+		{% endif %}
+		{% if paginator.next_page %}
+		<a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="button button--light pagination__next"><span>Older Posts</span> <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+		{% endif %}
+
+	</div>
+
+</section>
+
+{% endif %}

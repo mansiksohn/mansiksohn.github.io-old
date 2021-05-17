@@ -18,10 +18,10 @@ masthead_title           : # overrides the website title displayed in the masthe
 words_per_minute         : 200
 
 # Collection 커스텀 https://jekyllrb.com/docs/collections/
-#collections:
-#  portfolio:
-#    output: true
-#    permalink: /portfolio/:slug
+collections:
+  container:
+    output: true
+    permalink: /blog/:slug
 #  recipes:
 #    output: true
 #    permalink: /recipes/:slug
