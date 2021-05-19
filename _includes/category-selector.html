@@ -1,0 +1,29 @@
+<section class="blog">
+	<div class="content-wrap blog-wrap">
+		<!--  카테고리 -->
+		<nav class="category">
+			<!-- all -->
+	    <a href="{{ root_url }}/blog" class="category-name" cate="All">
+				<span class="name">
+					All
+	      </span>
+	      <span class="badge">
+					{{ site.posts | size }}
+	      </span>
+	  	</a>
+	  	<span class="category_divider">|</span>
+	     {% for category in site.categories %}
+	    <a href="{{ root_url }}/blog/{{ site.category_dir }}{{ category | first }}"
+	       class="category-name" cate="{{ category | first }}">
+	      <span class="name">
+	        {{ category | first }}
+	      </span>
+	      <span class="badge">
+					{{ category | last | size }}
+	      </span>
+	  	</a>
+	  	<span class="category_divider">|</span>
+			{% endfor %}
+    </nav>
+  </div>
+</section>

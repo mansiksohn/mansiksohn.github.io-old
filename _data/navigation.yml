@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "설계도"
-    url: /blueprint/
+    url: /blueprints/
   - title: "재료"
     url: /parts/
   - title: "도구"

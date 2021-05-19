@@ -1,67 +1,53 @@
 ---
 layout: default
 title: Blog
-description: 
-featured_image: '/img/opengraph.png'
+description:
+featured_image:
 ---
 
-<!--
-<section class="intro">
-
-	<div class="wrap">
-
-		<div class="main-text">
-            I WRITE ABOUT <br>
-            THE THINGS <br>
-            I'M INTERESTED IN</div>
-		<p>관심있는 것들에 대한 글을 씁니다.</p>
-</section>
-    
--->
-    
 <section class="blog">
      <div class="content-wrap blog-wrap">
          <!--  카테고리 -->
         <nav class="category">
          <!-- all -->
           <a href="{{ root_url }}/blog" class="category-name" cate="All">
-            
+
             <span class="name">
                 All
             </span>
-            
+
             <span class="badge">
                 {{site.posts | size}}
             </span>
         </a>
-          
-        <span class="category_divider">|</span> 
-          
+
+        <span class="category_divider">|</span>
+
           {% for category in site.categories %}
-          
-          <a href="{{ root_url }}/blog/{{ site.category_dir }}{{ category | first }}" 
+
+          <a href="{{ root_url }}/blog/{{ site.category_dir }}{{ category | first }}"
              class="category-name" cate="{{ category | first }}">
-        
+
               <span class="name">
-              {{ category | first }} 
+              {{ category | first }}
               </span>
-              
+
               <span class="badge">
                   {{ category | last | size }}
               </span>
-              
+
         </a>
-          
-        <span class="category_divider">|</span> 
-          
+
+        <span class="category_divider">|</span>
+
       {% endfor %}
-          
+
       </nav>
-        </div> 
+        </div>
 </section>
-    
+
 <section class="blog">
-    
+
 	<div class="content-wrap blog-wrap">
 
         {% for post in site.categories.Thoughts %}
@@ -75,7 +61,7 @@ featured_image: '/img/opengraph.png'
                     </div>
                     <div class="meta">
                       {{ post.date | date: "%B %-d, %Y" }}
-                    </div>               
+                    </div>
                     <div class="excerpt">
                       {{ post.excerpt | truncatewords: 40, '...' }}
                     </div>
