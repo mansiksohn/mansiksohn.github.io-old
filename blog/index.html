@@ -1,19 +1,32 @@
 ---
-layout: blog
-title: Blog
+layout: archive
 description:
 featured_image:
 ---
 
 {% include category-selector.html %}
 
-<div class="catalogue">
-{% assign sorted = site.pages | sort: 'order' | reverse %}
-{% for page in sorted %}
-{% if page.book == true %}
-
-     {% include blog.html %}
-
-{% endif %}
+{% for post in site.posts %}
+  <a href="{{ post.url }}" class="link-post_list">
+    <div class="home-post-list">
+      <p class="post-type">
+        {{ post.type }}
+      </p>
+      <h4>
+        {{ post.title }}
+      </h4>
+      <p class="post-meta">
+        {{ post.date | date: "%b %d, %Y" }}
+      </p>
+      <p class="post-subtitle">
+          {{ post.subtitle }}
+      </p>
+      <div class="post-list-content">
+        {{ post.excerpt | truncatewords: 24 | strip_html }}
+      </div>
+      <hr>
+    </div>
+  </a>
 {% endfor %}
-</div>
+
+{% include paginator.html %}
