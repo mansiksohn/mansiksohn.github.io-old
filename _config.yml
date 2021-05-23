@@ -12,7 +12,7 @@ url                      : "http://127.0.0.1:4000/" # "https://mansiksohn.github
 baseurl                  : ""
 repository               : "mansiksohn/mansiksohn.github.io"
 teaser                   : "/assets/images/no-accident.png" # path of fallback teaser image
-logo                     : "/assets/images/88x88.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/VGRX.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs              : false # true, false (default)
 words_per_minute         : 200
