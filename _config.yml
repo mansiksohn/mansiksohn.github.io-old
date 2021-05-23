@@ -21,9 +21,6 @@ words_per_minute         : 200
 collections_dir: my_collections
 
 collections:
-  container:
-    output: true
-    permalink: /blog/:slug
   blueprints:
     output: true
     permalink: /blueprints/:slug

@@ -1,16 +1,17 @@
 ---
 layout: archive
+title: Blog
 description:
 featured_image:
 ---
 
 {% include category-selector.html %}
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
   <a href="{{ post.url }}" class="link-post_list">
-    <div class="home-post-list">
+    <div class="post-list-item">
       <p class="post-type">
-        {{ post.type }}
+        {{ post.categories }}
       </p>
       <h4>
         {{ post.title }}

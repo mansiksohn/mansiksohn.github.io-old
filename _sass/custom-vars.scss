@@ -1,3 +1,24 @@
+// Blog style
+.post-type {
+  color: #11A85A;
+  font-size: 1rem !important;
+}
+
+// Post item hover effect
+.post-list-item{
+  &:hover {
+	 opacity: 0.6;
+ }
+}
+
+// Grid item
+$color-white: #fff;
+$color-black: #000;
+$breakpoint-medium: 760px;
+$breakpoint-small: 500px;
+$breakpoint-xsmall: 380px;
+
+//--카테고리 더보기 가져오기--
 .more-posts {
   border: 1px solid #E5E5E5;
   padding: 10px 10px 5px;

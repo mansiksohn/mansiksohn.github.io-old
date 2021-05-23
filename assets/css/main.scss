@@ -4,7 +4,6 @@
 
 // https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/#customizing
 $sans-serif: 'Spoqa Han Sans';
-$monospace: 'Spoqa Han Sans';
 $type-size-4-5: 1em !default;
 
 @charset "utf-8";
@@ -12,16 +11,10 @@ $type-size-4-5: 1em !default;
 @import "minimal-mistakes";
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
-// Grid item
-//@import "tools";
-$color-white: #fff;
-$color-black: #000;
-$breakpoint-medium: 760px;
-$breakpoint-small: 500px;
-$breakpoint-xsmall: 380px;
+//그리드 레이아웃 추가
 @import "gridlayout";
 
-//카테고리 더보기 추가
+//추가한 스타일
 @import "custom-vars";
 
 // https://github.com/mmistakes/minimal-mistakes/issues/1219
