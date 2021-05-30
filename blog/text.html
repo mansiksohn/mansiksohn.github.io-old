@@ -1,0 +1,33 @@
+---
+layout: archive
+title: Blog
+description:
+featured_image:
+---
+
+{% include category-selector.html %}
+
+{% for post in site.categories.Jekyll %}
+  <a href="{{ post.url }}" class="link-post_list">
+    <div class="post-list-item">
+      <p class="post-type">
+        {{ post.categories }}
+      </p>
+      <h4>
+        {{ post.title }}
+      </h4>
+      <p class="post-meta">
+        {{ post.date | date: "%b %d, %Y" }}
+      </p>
+      <p class="post-subtitle">
+          {{ post.subtitle }}
+      </p>
+      <div class="post-list-content">
+        {{ post.excerpt | truncatewords: 24 | strip_html }}
+      </div>
+      <hr>
+    </div>
+  </a>
+{% endfor %}
+
+{% include paginator.html %}

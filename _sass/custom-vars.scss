@@ -1,3 +1,6 @@
+$type-size-4-5: 1em !default;
+$transition_style: top ease 0.2s;
+
 // Blog style
 .post-type {
   color: #11A85A;
@@ -8,6 +11,7 @@
 .post-list-item{
   &:hover {
 	 opacity: 0.6;
+   transition: $transition_style;
  }
 }
 

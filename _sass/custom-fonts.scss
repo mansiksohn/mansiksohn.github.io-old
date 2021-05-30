@@ -1,0 +1,31 @@
+// https://github.com/mmistakes/minimal-mistakes/issues/1219
+@import "minimal-mistakes";
+
+$sans-serif : "Noto Sans KR", Georgia, Times, serif !global;
+$global-font-family : $sans-serif;
+
+html {
+  font-size: 12px; // change to whatever
+
+  @include breakpoint($medium) {
+    font-size: 14px; // change to whatever
+  }
+
+  @include breakpoint($large) {
+    font-size: 16px; // change to whatever
+  }
+
+  @include breakpoint($x-large) {
+    font-size: 18px; // change to whatever
+  }
+}
+
+.highlight {
+  font-family: $monospace;
+  font-size: $type-size-4-5;
+}
+
+.language-plaintext {
+  font-family: $monospace;
+  font-size: $type-size-5;
+}

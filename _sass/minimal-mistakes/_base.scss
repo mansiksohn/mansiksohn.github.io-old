@@ -162,6 +162,7 @@ a {
 
   &:hover {
     color: $link-color-hover;
+    transition: top ease 0.2s;
     outline: 0;
   }
 }

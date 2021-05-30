@@ -1,12 +1,12 @@
 # main links
 main:
-  - title: "설계도"
+  - title: "🏗 설계도"
     url: /blueprints/
-  - title: "재료"
+  - title: "🔩 재료"
     url: /parts/
-  - title: "도구"
+  - title: "🗜 도구"
     url: /tools/
-  - title: "About"
+  - title: "💬 About"
     url: /about/
-  - title: "Blog"
+  - title: "🦆 Blog"
     url: /blog/

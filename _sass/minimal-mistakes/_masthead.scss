@@ -4,12 +4,13 @@
 
 .masthead {
   position: relative;
-  border-bottom: 0px solid $border-color; //헤더 아래 라인
+  border-bottom: 0px solid $border-color; //헤더 아래 라인 없애기
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
   z-index: 20;
+  margin-bottom: 1em;
 
   &__inner-wrap {
     @include clearfix;

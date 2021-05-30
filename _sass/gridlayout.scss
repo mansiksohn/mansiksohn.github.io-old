@@ -10,24 +10,24 @@
 }
 
 .img-gallery {
- width: 100%;
- display: grid;
- grid-template-columns: repeat(auto-fill,minmax(450px, 1fr));
- justify-content: center;
- padding: 4px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill,minmax(450px, 1fr));
+	justify-content: center;
+	padding: 4px;
 }
 
 .box {
-	 flex-basis: 25%;
-	 width: 100%;
-	 padding: $grid-spacing;
-	 margin: 2px;
+	flex-basis: 25%;
+	width: 100%;
+	padding: $grid-spacing;
+	margin: 0px;
 }
 
 .post-item__link {
 	position: relative;
 	display: block;
-    transition: top ease 0.5s;
+  transition: top ease 0.2s;
 
 	&:hover {
 		.post-item__content {
@@ -35,23 +35,22 @@
 			visibility: visible;
 		}
 	}
-
 }
 
 .post-item__content {
-position: absolute;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-display: flex;
-align-items: center;
-justify-content: center;
-background: rgba($overlay_background_color, $overlay_opacity);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba($overlay_background_color, $overlay_opacity);
 
-opacity: 0;
-visibility: hidden;
-transition: (all 0.2s ease-in-out);
+	opacity: 0;
+	visibility: hidden;
+	transition: (all 0.2s ease-in-out);
 
 	&:hover {
 	 opacity: 1;
