@@ -9,24 +9,42 @@
 	}
 }
 
+//--그리드--//
 .img-gallery {
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(auto-fill,minmax(450px, 1fr));
 	justify-content: center;
-	padding: 4px;
+	padding: 0px;
 }
 
+//--그리드를 구성하는 박스--//
 .box {
-	flex-basis: 25%;
+	flex-basis: 50%;
 	width: 100%;
 	padding: $grid-spacing;
 	margin: 0px;
+
+	& ::before {
+	  content: '';
+	  display: block;
+	  padding-top: 50%; //이부분이 100%였는데 가로폭 배수로 세로길이가 늘어났다
+	}
+
+	& img {
+		position: absolute;
+		object-fit: contain;
+		top: 0; left: 0;
+		height: 100%;
+		width: 100%;
+		padding: 48px;
+	}
 }
 
-.post-item__link {
+//--그리드를 구성하는 박스에 마우스오버 이벤트--//
+.box {
 	position: relative;
-	display: block;
+	//display: block;
   transition: top ease 0.2s;
 
 	&:hover {
@@ -37,6 +55,11 @@
 	}
 }
 
+//--그리드를 구성하는 박스 내 이미지--//
+.post-item__image {
+}
+
+//--그리드를 구성하는 박스 내 제목과 설명 텍스트--//
 .post-item__content {
 	position: absolute;
 	top: 0;
@@ -44,6 +67,7 @@
 	bottom: 0;
 	left: 0;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	background: rgba($overlay_background_color, $overlay_opacity);
@@ -52,9 +76,30 @@
 	visibility: hidden;
 	transition: (all 0.2s ease-in-out);
 
+	& p {
+		align-items: flex-start;
+	}
+
 	&:hover {
 	 opacity: 1;
 	 visibility: visible;
 	 transition: (all 0.2s ease-in-out);
 	}
+
+	& ::before {
+	  padding-top: 0%;
+	}
+}
+
+//--글자를 가운데로 정렬--//
+.post-item__title {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-3em);
+}
+
+.post-item__subtitle {
+	position: absolute;
+	top: 50%;
+	//transform: translateY(-50%);
 }

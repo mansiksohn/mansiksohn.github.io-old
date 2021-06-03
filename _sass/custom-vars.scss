@@ -1,13 +1,25 @@
+/*
+   My Grid layout
+   ========================================================================== */
+$grid-spacing: 24px;
+$overlay-background-color: #FFF;
+$overlay_opacity: 0.8;
+
+
 $type-size-4-5: 1em !default;
 $transition_style: top ease 0.2s;
 
-// Blog style
+/*
+   Blog style
+   ========================================================================== */
 .post-type {
   color: #11A85A;
   font-size: 1rem !important;
 }
 
-// Post item hover effect
+/*
+   Post item hover effect
+   ========================================================================== */
 .post-list-item{
   &:hover {
 	 opacity: 0.6;
