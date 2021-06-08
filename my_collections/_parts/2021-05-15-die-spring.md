@@ -14,9 +14,9 @@ layout: simple
 *Amazon Associates 이미지*<br>
 *Antrader 6-Pack Red Medium Load Press Compression Mould Die Spring, 1.15-Inch-by-0.63-Inch-by-2.36-Inch*
 
-금형 스프링이라고 부르고 영어는 'Die spring' 이나 'Mold spring'으로 검색하면 된다.  
-금형 기계에 사용되는 부품이라 지어진 이름같은데, 요새는 3D프린터 부품으로도 많이 쓰이는 것 같다.  
-하중에 따라 색이 다르고, 크기가 다양하다. 새끼손가락정도로 작은 스프링은 몇백원정도로, 인터넷으로 쉽게 구매할 수 있다.
+금형 스프링이라고 부르고 영어는 'Die spring' 이나 'Mold spring'으로 검색하면 됩니다.  
+금형 기계에 사용되는 부품이라 지어진 이름같은데, 요새는 3D프린터 부품으로도 많이 쓰이는 것 같습니다.  
+하중에 따라 색이 다르고, 크기가 다양합니다. 새끼손가락정도로 작은 스프링은 몇백원정도로, 인터넷으로 쉽게 구매할 수 있습니다.
 
 [![빨간색 금형 스프링](//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07HNYLSM1&Format=_SL500_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=dogox-20&language=en_US "빨간색 금형 스프링")](https://www.amazon.com/Antrader-Compression-1-15-Inch-0-63-Inch-2-36-Inch/dp/B07HNYLSM1/ref=as_li_ss_il?dchild=1&keywords=die+spring&qid=1589524955&sr=8-7&linkCode=li3&tag=dogox-20&linkId=4d59f6b6d85d4d0d28fc98cd5ed21363&language=en_US){: target="_blank"}
 
